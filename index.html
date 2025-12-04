@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Формула кондитера</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    :root {
+      --accent: #ca5742;
+      --bg: #fff8f0;
+      --text: #7b301b;
+      --card: #fff;
+      --shadow: 0 2px 12px rgba(0,0,0,0.04);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 16px;
+      font-size: 16px;
+    }
+    .container { max-width: 100%; margin: 0 auto; }
+    .logo { font-size: 24px; font-weight: 700; margin: 8px 0; }
+    .eyebrow {
+      background: rgba(202, 87, 66, 0.1);
+      color: var(--accent);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 13px;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 0 0 12px;
+      line-height: 1.2;
+    }
+    .lead {
+      font-size: 16px;
+      margin: 0 0 20px;
+      color: #555;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 16px;
+      margin: 16px 0;
+      box-shadow: var(--shadow);
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 16px 0;
+    }
+    .chip {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 6px 12px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .cta {
+      display: block;
+      background: var(--accent);
+      color: white !important;
+      text-align: center;
+      padding: 12px;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      margin: 16px 0;
+      box-shadow: 0 4px 12px rgba(202, 87, 66, 0.2);
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin: 8px 0;
+      display: block;
+    }
+    ul, ol {
+      padding-left: 20px;
+      margin: 12px 0;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .section {
+      margin: 24px 0;
+    }
+    .section h2 {
+      font-size: 20px;
+      margin: 0 0 12px;
+    }
+    .footer {
+      text-align: center;
+      color: #888;
+      font-size: 14px;
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">Yarosh_Cake</div>
+
+    <div class="eyebrow">Авторская программа для новичков</div>
+    <h1>Формула кондитера</h1>
+    <p class="lead">Преврати любовь к выпечке в прибыльный бизнес — даже если ты начинаешь с нуля.</p>
+
+    <div class="features">
+      <div class="chip">25+ десертов</div>
+      <div class="chip">Расчёт себестоимости</div>
+      <div class="chip">Премиум-декоры</div>
+      <div class="chip">Продажи и продвижение</div>
+    </div>
+
+    <a href="https://t.me/yaroshcake?text=«Привет! Интересует курс «Формула кондитера»»" class="cta">Записаться на курс</a>
+
+    <div class="section">
+      <h2>Что ты получишь?</h2>
+      <div class="card">
+        <ul>
+          <li>9 модулей: от бенто-тортов до муссовых десертов</li>
+          <li>Оборудование и ингредиенты — что нужно на старте</li>
+          <li>Ценообразование и работа с клиентами</li>
+          <li>Готовые тексты, Reels, сторис — начнёшь продавать сразу</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Бонусы за запись</h2>
+      <div class="card">
+        <ul>
+          <li>Самые выгодные цены — только для первых</li>
+          <li>Бесплатный модуль «Муссовые Бенто»</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Примеры десертов</h2>
+      <img src="https://static.tildacdn.com/tild3238-6138-4764-a461-653862373065/IMG_8417.JPG" alt="Десерт">
+      <img src="https://static.tildacdn.com/tild3465-6133-4861-a165-326161303838/Placeholder_Image.svg" alt="Десерт">
+      <img src="https://static.tildacdn.com/tild3538-3531-4136-b733-353266373333/Placeholder_Image_1.svg" alt="Десерт">
+    </div>
+
+    <a href="https://t.me/yaroshcake?text=«Привет! Интересует курс «Формула кондитера»»" class="cta">Начать зарабатывать на десертах</a>
+
+    <div class="footer">
+      © Yarosh_Cake, 2025
+    </div>
+  </div>
+
+  <script>
+    if (window.Telegram?.WebApp) {
+      const tg = Telegram.WebApp;
+      tg.ready();
+      tg.expand();
+
+      tg.MainButton.setText('Записаться на курс');
+      tg.MainButton.onClick(() => {
+        tg.openTelegramLink('https://t.me/yaroshcake?text=«Привет! Интересует курс «Формула кондитера»»');
+      });
+      tg.MainButton.show();
+
+      // Поддержка темной темы
+      if (tg.colorScheme === 'dark') {
+        document.body.style.background = '#121212';
+        document.body.style.color = '#e0e0e0';
+        document.querySelectorAll('.card').forEach(el => {
+          el.style.background = '#1e1e1e';
+        });
+      }
+    }
+  </script>
+</body>
+</html>
